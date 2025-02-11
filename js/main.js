@@ -1,7 +1,7 @@
 const pipBtn = document.getElementById('pip-btn');
 
 pipBtn.addEventListener('click', async () => {
-  if (!(documentPictureInPicture in window)) {
+  if (!('documentPictureInPicture' in window)) {
     alert('ピクチャーインピクチャーはサポートされていません');
     return;
   }
